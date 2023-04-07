@@ -46,6 +46,7 @@
                 <img src="{{ product.featured_image | img_url: '600x' }}" alt="{{ product.featured_image.alt | escape }}">
               </noscript>
             </div>
+          {%- render 'button-wishlist', product: product -%}
           </a>
         {%- endif -%}
 
