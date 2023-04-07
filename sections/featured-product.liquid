@@ -57,6 +57,7 @@
             <div class="ProductMeta__Description Rte">
               {{ product.description }}
             </div>
+            {%- render 'button-wishlist', product: product -%}
           {%- endif -%}
 
           <div class="FeaturedProduct__ViewWrapper">
