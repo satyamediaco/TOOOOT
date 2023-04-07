@@ -1,0 +1,14 @@
+{%- assign default_size = 24 -%}
+{%- assign default_color_active = "#000000" -%}
+{%- assign default_border_color = "#000000" -%}
+{%- assign default_color_inactive = "#ffffff" -%}
+{%- assign default_position = "top-right" -%}
+{%- assign default_margin = 0 -%}
+<div class="firstwish-badge {{ position | default: default_position }}" style="stroke: {{ border_color | default: default_border_color }};margin: {{ extra_margin | default: default_margin }}px;" data-product-handle="{{ product.handle }}" data-icon-color-active="{{ color_active | default: default_color_active }}" data-icon-color-inactive="{{ color_inactive | default: default_color_inactive }}">
+  <svg class="heart-main" viewBox="0 0 512 512" width="{{ size | default: default_size }}px" height="{{ size | default: default_size }}px" data-product-handle="{{ product.handle }}">
+    <path d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z" data-product-handle="{{ product.handle }}" />
+  </svg>
+  <svg class="heart-background" viewBox="0 0 512 512" width="{{ size | default: default_size }}px" height="{{ size | default: default_size }}px" data-product-handle="{{ product.handle }}">
+    <path d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z" data-product-handle="{{ product.handle }}" />
+  </svg>
+</div>

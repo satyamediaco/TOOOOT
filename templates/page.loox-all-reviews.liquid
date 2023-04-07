@@ -1,0 +1,64 @@
+{% if shop.metafields.loox["global_stats"] %}
+{% assign looxstats = shop.metafields.loox["global_stats"] | split: "," %}
+<div itemscope itemtype="https://schema.org/Product">
+<meta itemprop="name" content="{{ shop.name | escape }}"/>
+<div itemprop="aggregateRating" itemscope itemtype="https://schema.org/AggregateRating">
+<meta itemprop="ratingValue" content="{{ looxstats[0] }}"/>
+<meta itemprop="ratingCount" content="{{ looxstats[1] }}"/>
+  </style>
+</div>
+</div>
+{% endif %}
+<div class="Container">
+  <header class="PageHeader">
+    <div class="SectionHeader SectionHeader--center">
+      <h1 class="SectionHeader__Heading Heading u-h1">{{ page.title }}</h1>
+    </div>
+  </header>
+
+<body>
+<div class="row" style="display: flex;">
+  <div class="column" style="flex: 33.33%;
+  padding: 5px;">
+   <a href="https://theorganictreasure.in/collections/utmt"><img src="https://cdn.shopify.com/s/files/1/0681/5789/9061/files/3_925e49a3-457b-44ad-8473-895b78decf59.png?v=1680530019" alt="Snow" style="width:300px"></a>
+ 
+  </div>
+  <div class="column" style="flex: 33.33%;padding: 5px;">
+    <a href="https://theorganictreasure.in/collections/true-farm"><img src="https://cdn.shopify.com/s/files/1/0681/5789/9061/files/2_17f79ab7-3e7a-4cea-a5a3-cdfb2f459961.png?v=1680530019" alt="Forest" style="width:300px"></a>
+  </div>
+  <div class="column" style="flex: 33.33%;
+  padding: 5px;">
+    <img src="https://cdn.shopify.com/s/files/1/0681/5789/9061/files/1_1b2446fc-e9b4-4ea9-a081-bff7d265b684.png?v=1680530019" alt="Mountains" style="width:300px">
+  </div>
+</div>
+<div class="row"style="display: flex;">
+  <div class="column"style="flex: 33.33%;
+  padding: 5px;">
+    <img src="https://cdn.shopify.com/s/files/1/0681/5789/9061/files/Nirvana_Organic_-_Logo.png?v=1680593875" alt="Snow" style="width:300px">
+  </div>
+</div>
+  {% comment %}}
+  <div class="column"style="flex: 33.33%;
+  padding: 5px;">
+    <img src="https://cdn.shopify.com/s/files/1/0681/5789/9061/files/UTMT_Mass_Logo.png?v=1680513718" alt="Forest" style="width:100%">
+  </div>
+  <div class="column"style="flex: 33.33%;
+  padding: 5px;">
+    <img src="https://cdn.shopify.com/s/files/1/0681/5789/9061/files/UTMT_Mass_Logo.png?v=1680513718" alt="Mountains" style="width:100%">
+  </div>
+</div>
+<div class="row" style="display: flex;">
+  <div class="column"style="flex: 33.33%;
+  padding: 5px;">
+    <img src="https://cdn.shopify.com/s/files/1/0681/5789/9061/files/UTMT_Mass_Logo.png?v=1680513718" alt="Snow" style="width:100%">
+  </div>
+  <div class="column"style="flex: 33.33%;
+  padding: 5px;">
+    <img src="https://cdn.shopify.com/s/files/1/0681/5789/9061/files/UTMT_Mass_Logo.png?v=1680513718" alt="Forest" style="width:100%">
+  </div>
+  <div class="column"style="flex: 33.33%;
+  padding: 5px;">
+    <img src="https://cdn.shopify.com/s/files/1/0681/5789/9061/files/UTMT_Mass_Logo.png?v=1680513718" alt="Mountains" style="width:100%">
+  </div>
+</div>
+  {% endcomment %}
